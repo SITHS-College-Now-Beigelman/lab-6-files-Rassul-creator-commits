@@ -27,11 +27,16 @@ int main()
     outData<<"The sum of the two integers is " << integerA + integerB << endl; // adds the integers in inData.txt then outputs it in outData.txt
 
     inData >> letter; 
-    letterreformed = letter + 1; // moves one up the ASCII chart
-    outData << "The letter after " << letter << " is " << letterreformed << endl; //outputs the next one up the ASCII chart
+    outData << "The letter after " << letter << " is " << char(letter + 1) << endl; //outputs the next one up the ASCII chart
 
     inData >> words; // copies and pastes a sentence from the inData.txt to outData.txt 
     outData << words; 
+
+     /*
+    The sum of the two integers is 133
+    The letter after I is J
+    What
+    */
 
 
     return 0; 
